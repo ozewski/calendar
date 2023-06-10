@@ -7,8 +7,8 @@ PostgreSQL). This application requires a database in order to function properly.
 should be set through a `.env` file including the following variables:
 
 * `URL` (like `postgresql://localhost:5432/db_name`)
-* `USERNAME`
-* `PASSWORD`
+* `USER` - database user
+* `PASSWORD` - database user password
 
 In order to run this application:
 

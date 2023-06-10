@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);  // create scanner for input
 
         Properties props = new Properties();  // set up props object to connect to database
-        props.setProperty("user", config.get("USERNAME"));
+        props.setProperty("user", config.get("USER"));
         props.setProperty("password", config.get("PASSWORD"));
 
         // connect to database
@@ -19,6 +19,7 @@ public class Main {
             // could not connect (server is off?)
             System.out.println("ERROR: could not connect to the database.");
             System.out.println("Check that the database is running and that the configuration details are correct.");
+            e.printStackTrace();
         }
 
         sc.close();  // prevent memory leak
