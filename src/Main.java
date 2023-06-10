@@ -17,8 +17,8 @@ public class Main {
             runner.run();  // run application (blocking)
         } catch (SQLException e) {
             // could not connect (server is off?)
-            System.out.println("Error: could not connect to the database.");
-            System.out.println("Check that the database is running and that the configuration details are correct");
+            System.out.println("ERROR: could not connect to the database.");
+            System.out.println("Check that the database is running and that the configuration details are correct.");
         }
 
         sc.close();  // prevent memory leak
