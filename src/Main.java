@@ -19,7 +19,6 @@ public class Main {
             // could not connect (server is off?)
             System.out.println("ERROR: could not connect to the database.");
             System.out.println("Check that the database is running and that the configuration details are correct.");
-            e.printStackTrace();
         }
 
         sc.close();  // prevent memory leak
